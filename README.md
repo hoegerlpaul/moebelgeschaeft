@@ -4,6 +4,7 @@ Ein Webprojekt mit Next.js-Frontend, Node.js-Backend und MongoDB-Datenbank.
 
 ## Voraussetzungen
 - Docker Desktop (https://www.docker.com/products/docker-desktop/)
+- Im Terminal bei Docker anmelden `docker login <Nutzername>`
 
 ## Start
 1. Projektverzeichnis entpacken
