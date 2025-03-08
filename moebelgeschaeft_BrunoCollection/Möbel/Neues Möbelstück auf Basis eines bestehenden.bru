@@ -1,0 +1,32 @@
+meta {
+  name: Neues Möbelstück auf Basis eines bestehenden
+  type: http
+  seq: 8
+}
+
+post {
+  url: http://localhost:3001/furniture/custom
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "originalId": "67c9f46cb11b86025be063b2",
+    "name": "Bruno Esstisch (Konfiguriert)",
+    "material": "Holz",
+    "color": "Dunkle Eiche",
+    "dimensions": {
+      "width": 200,
+      "height": 80,
+      "depth": 100
+    },
+    "price": 819.99,
+    "configurations": {
+      "Oberfläche": "Geölt",
+      "Beleuchtung": "LED",
+      "Ausziehbar": "Ja"
+    }
+  }
+  
+}

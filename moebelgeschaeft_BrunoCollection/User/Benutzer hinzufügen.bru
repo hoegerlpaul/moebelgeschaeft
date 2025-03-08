@@ -1,0 +1,21 @@
+meta {
+  name: Benutzer hinzufügen
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://localhost:3001/users
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "name": "Max Mustermann2",
+    "email": "max2@example.com",
+    "password": "geheim",
+    "role": "customer"
+  }
+  
+}

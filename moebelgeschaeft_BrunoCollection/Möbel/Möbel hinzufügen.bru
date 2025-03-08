@@ -1,0 +1,27 @@
+meta {
+  name: Möbel hinzufügen
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://localhost:3001/furniture
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "name": "Test aus Bruno",
+    "material": "Leder",
+    "color": "Schwarz",
+    "dimensions": {
+      "width": 200,
+      "height": 90,
+      "depth": 80
+    },
+    "price": 899.99,
+    "stock": 2
+  }
+  
+}

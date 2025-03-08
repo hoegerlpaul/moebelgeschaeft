@@ -1,0 +1,24 @@
+meta {
+  name: Möbel ändern
+  type: http
+  seq: 6
+}
+
+patch {
+  url: http://localhost:3001/furniture/67cc33aa57afa3e63d30bbb7
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "name": "Test aus Bruno geändert",
+    "price": 749.99,
+    "dimensions": {
+      "width": 200,
+      "height": 80,
+      "depth": 100
+    }
+  }
+  
+}
